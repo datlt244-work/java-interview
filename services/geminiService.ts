@@ -2,7 +2,7 @@ import { GoogleGenAI, Chat } from "@google/genai";
 
 // Initialize Gemini
 // Sửa dòng này:
-const ai = new GoogleGenAI({ apiKey: "AIzaSy..." }); // Dán trực tiếp key vào đây
+const ai = new GoogleGenAI({ apiKey: window.process.env.API_KEY });// Dán trực tiếp key vào đây
 const MODEL_NAME = 'gemini-3-flash-preview';
 
 export const createChatSession = (): Chat => {
