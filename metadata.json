@@ -1,0 +1,7 @@
+{
+  "name": "Copy of JavaPrep Mate",
+  "description": "Ứng dụng ôn tập phỏng vấn Java Intern/Fresher mô phỏng trải nghiệm Mobile App. Tập trung vào các từ khóa (keywords) và kiến thức cốt lõi. Tích hợp AI để phỏng vấn thử.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
