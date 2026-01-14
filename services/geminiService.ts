@@ -1,8 +1,10 @@
 import { GoogleGenAI, Chat } from "@google/genai";
 
-// Initialize Gemini
-// Sửa dòng này:
-const ai = new GoogleGenAI({ apiKey: window.process.env.API_KEY });// Dán trực tiếp key vào đây
+// Initialize Gemini with Vite environment variable
+// Giá trị sẽ được lấy từ biến môi trường VITE_GEMINI_API_KEY
+const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY as string,
+});
 const MODEL_NAME = 'gemini-3-flash-preview';
 
 export const createChatSession = (): Chat => {
